@@ -4,7 +4,7 @@ public record ResultadoDelCambio(String result, String base_code, String target_
 
     @Override
     public String toString() {
-        return "Resultado: " + result + "!" +
+        return "\n Resultado: " + result + "!" +
                 "\n Cambio de: " + base_code +
                 " =>> " + target_code +
                 "\n Tasa de conversión: " + conversion_rate +

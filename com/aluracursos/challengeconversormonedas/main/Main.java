@@ -52,35 +52,35 @@ public class Main {
                 case 2:
                     System.out.println("Ingrese el monto que desea cambiar:");
                     monto = lectura.nextDouble();
-                    resultado = consulta.consultaCambio(apiKey, "USD", "ARS", monto);
+                    resultado = consulta.consultaCambio(apiKey, "ARS", "USD", monto);
                     System.out.println(resultado);
                     listaDeCAmbios.add(resultado);
                     break;
                 case 3:
                     System.out.println("Ingrese el monto que desea cambiar:");
                     monto = lectura.nextDouble();
-                    resultado = consulta.consultaCambio(apiKey, "USD", "ARS", monto);
+                    resultado = consulta.consultaCambio(apiKey, "USD", "BRL", monto);
                     System.out.println(resultado);
                     listaDeCAmbios.add(resultado);
                     break;
                 case 4:
                     System.out.println("Ingrese el monto que desea cambiar:");
                     monto = lectura.nextDouble();
-                    resultado = consulta.consultaCambio(apiKey, "USD", "ARS", monto);
+                    resultado = consulta.consultaCambio(apiKey, "BRL", "USD", monto);
                     System.out.println(resultado);
                     listaDeCAmbios.add(resultado);
                     break;
                 case 5:
                     System.out.println("Ingrese el monto que desea cambiar:");
                     monto = lectura.nextDouble();
-                    resultado = consulta.consultaCambio(apiKey, "USD", "ARS", monto);
+                    resultado = consulta.consultaCambio(apiKey, "USD", "COP", monto);
                     System.out.println(resultado);
                     listaDeCAmbios.add(resultado);
                     break;
                 case 6:
                     System.out.println("Ingrese el monto que desea cambiar:");
                     monto = lectura.nextDouble();
-                    resultado = consulta.consultaCambio(apiKey, "USD", "ARS", monto);
+                    resultado = consulta.consultaCambio(apiKey, "COP", "USD", monto);
                     System.out.println(resultado);
                     listaDeCAmbios.add(resultado);
                     break;
