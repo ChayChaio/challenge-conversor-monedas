@@ -21,16 +21,17 @@ public class Main {
         ResultadoDelCambio resultado;
         List<ResultadoDelCambio> listaDeCAmbios = new ArrayList<>();
         Scanner lectura = new Scanner(System.in);
-        System.out.println("Bienvenido al conversor de monedas");
-        System.out.println("Para comenzar ingrese una APIKey válida:");
+        System.out.println("*******************************************");
+        System.out.println("   ¡Bienvenido al conversor de monedas!");
+        System.out.println("*******************************************");
+        System.out.println(" Para comenzar ingrese una APIKey válida:");
         String apiKey = lectura.next();
         int opcion = 0;
         double monto;
 
 
         while (opcion != 8){
-            System.out.println("");
-            System.out.println("1.- Dólar =>> Peso Argentino");
+            System.out.println("\n1.- Dólar =>> Peso Argentino");
             System.out.println("2.- Peso Argentino =>> Dólar");
             System.out.println("3.- Dólar =>> Real Brasileño");
             System.out.println("4.- Real Brasileño =>> Dólar");
@@ -46,50 +47,46 @@ public class Main {
                     System.out.println("Ingrese el monto que desea cambiar:");
                     monto = lectura.nextDouble();
                     resultado = consulta.consultaCambio(apiKey, "USD", "ARS", monto);
-                    System.out.println(resultado);
-                    listaDeCAmbios.add(resultado);
+                    resultado.mostrarAlmacenarResultado(resultado, listaDeCAmbios);
                     break;
                 case 2:
                     System.out.println("Ingrese el monto que desea cambiar:");
                     monto = lectura.nextDouble();
                     resultado = consulta.consultaCambio(apiKey, "ARS", "USD", monto);
-                    System.out.println(resultado);
-                    listaDeCAmbios.add(resultado);
+                    resultado.mostrarAlmacenarResultado(resultado, listaDeCAmbios);
                     break;
                 case 3:
                     System.out.println("Ingrese el monto que desea cambiar:");
                     monto = lectura.nextDouble();
                     resultado = consulta.consultaCambio(apiKey, "USD", "BRL", monto);
-                    System.out.println(resultado);
-                    listaDeCAmbios.add(resultado);
+                    resultado.mostrarAlmacenarResultado(resultado, listaDeCAmbios);
                     break;
                 case 4:
                     System.out.println("Ingrese el monto que desea cambiar:");
                     monto = lectura.nextDouble();
                     resultado = consulta.consultaCambio(apiKey, "BRL", "USD", monto);
-                    System.out.println(resultado);
-                    listaDeCAmbios.add(resultado);
+                    resultado.mostrarAlmacenarResultado(resultado, listaDeCAmbios);
                     break;
                 case 5:
                     System.out.println("Ingrese el monto que desea cambiar:");
                     monto = lectura.nextDouble();
                     resultado = consulta.consultaCambio(apiKey, "USD", "COP", monto);
-                    System.out.println(resultado);
-                    listaDeCAmbios.add(resultado);
+                    resultado.mostrarAlmacenarResultado(resultado, listaDeCAmbios);
                     break;
                 case 6:
                     System.out.println("Ingrese el monto que desea cambiar:");
                     monto = lectura.nextDouble();
                     resultado = consulta.consultaCambio(apiKey, "COP", "USD", monto);
-                    System.out.println(resultado);
-                    listaDeCAmbios.add(resultado);
+                    resultado.mostrarAlmacenarResultado(resultado, listaDeCAmbios);
                     break;
                 case 7:
                     GeneradorDeJson generador = new GeneradorDeJson();
                     System.out.println("Por favor, ingrese el nombre con el que desea guardar el archivo:");
-                    String archivo = lectura.next();
+                    lectura.nextLine();
+                    String archivo = lectura.nextLine();
                     generador.guardarJson(archivo, listaDeCAmbios);
                     System.out.println("Su archivo fue guardado correctamente!");
+                    System.out.println("Gracias por usar nuestro conversor!");
                     opcion = 8;
                     break;
 
@@ -99,8 +96,8 @@ public class Main {
         }
 
 
-
-
-
     }
+
+
+
 }
