@@ -13,7 +13,7 @@ y la presentación del cambio realizado.
   - [ConsultaApi.java](#consultaapijava)
   - [GeneradorDeJson.java](#generadordejsonjava)
   - [ResultadoDelCambio.java](#resultadodelcambiojava)
-- [Capturas paso a paso](#capturas) 
+- [Capturas paso a paso](#capturas-paso-a-paso) 
 
 ## Requisitos
 
