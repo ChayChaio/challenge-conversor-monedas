@@ -4,12 +4,14 @@ import java.util.List;
 
 public record ResultadoDelCambio(String result, String base_code, String target_code, double conversion_rate, double conversion_result) {
 
-    public void mostrarAlmacenarResultado(ResultadoDelCambio resultado, List lista){
+    public void mostrarResultado() {
         System.out.println("*******************************************");
-        System.out.println(resultado);
-        System.out.println("\n*******************************************");
-        lista.add(resultado);
+        System.out.println(this);
+    }
 
+    public void almacenarResultado(List<ResultadoDelCambio> lista){
+        System.out.println("\n*******************************************");
+        lista.add(this);
     }
 
     @Override
