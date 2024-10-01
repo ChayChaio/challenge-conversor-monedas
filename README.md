@@ -1,8 +1,19 @@
 # Conversor de Monedas
 
-Este proyecto es una aplicación simple que permite consultar y convertir monedas usando una API externa. 
+Este proyecto es un conversor de monedas que permite realizar conversiones entre varias divisas populares 
+y guardar los resultados en un archivo JSON. La aplicación interactúa con una API externa para 
+obtener las tasas de conversión actualizadas. 
 Está compuesto por varias clases que gestionan la consulta a la API, el procesamiento de los resultados 
 y la presentación del cambio realizado.
+
+## Funcionalidades
+- Convertir entre las siguientes monedas:
+- Dólar (USD) y Peso Argentino (ARS)
+- Dólar (USD) y Real Brasileño (BRL)
+- Dólar (USD) y Peso Colombiano (COP)
+- Mostrar el resultado de la conversión en pantalla.
+- Guardar los resultados de las conversiones en un archivo JSON.
+- Finalizar el programa automáticamente después de guardar los resultados.
 
 ## Tabla de Contenidos
 - [Requisitos](#requisitos)
@@ -17,9 +28,9 @@ y la presentación del cambio realizado.
 
 ## Requisitos
 
-- Java 11 o superior.
+- Java 17 o superior.
 - Dependencias externas para consultas HTTP (por ejemplo, `HttpClient` de Java o alguna librería como `OkHttp`).
-- Acceso a una API de conversión de divisas.
+- Clave API válida para realizar consultas de conversión de moneda (obtenida de una API de cambio de divisas).
 
 ## Instalación
 
@@ -27,14 +38,23 @@ y la presentación del cambio realizado.
    ```bash
    git clone https://github.com/tu-repositorio/conversor-monedas.git
 
-   Navega hasta el directorio del proyecto:
-cd conversor-monedas
+Navega hasta el directorio del proyecto:
+  cd conversor-monedas
 
 Compila el proyecto:
-javac -d bin src/*.java
+  javac -d bin src/*.java
 
 Ejecuta la aplicación:
-java -cp bin com.aluracursos.challengeconversormonedas.Main
+  java -cp bin com.aluracursos.challengeconversormonedas.Main
+
+Ingresa tu clave API cuando se te solicite.
+
+Selecciona las opciones del menú para realizar conversiones entre monedas. 
+Los resultados se mostrarán en pantalla y se almacenarán en una lista.
+
+Puedes optar por guardar los resultados de las conversiones en un archivo 
+JSON seleccionando la opción 7 en el menú. El programa se cerrará automáticamente 
+después de guardar los resultados correctamente.
 
 ## Uso
 La aplicación toma como entrada una moneda base y una moneda destino para consultar la tasa de conversión y calcular el monto equivalente, 
