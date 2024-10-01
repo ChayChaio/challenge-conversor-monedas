@@ -11,9 +11,9 @@ y la presentación del cambio realizado.
 - Dólar (USD) y Peso Argentino (ARS)
 - Dólar (USD) y Real Brasileño (BRL)
 - Dólar (USD) y Peso Colombiano (COP)
-**Mostrar el resultado de la conversión en pantalla.**
-**Guardar los resultados de las conversiones en un archivo JSON.**
-**Finalizar el programa automáticamente después de guardar los resultados.**
+- Mostrar el resultado de la conversión en pantalla.
+- Guardar los resultados de las conversiones en un archivo JSON.
+- Finalizar el programa automáticamente después de guardar los resultados.
 
 ## Tabla de Contenidos
 - [Requisitos](#requisitos)
