@@ -7,18 +7,17 @@ Está compuesto por varias clases que gestionan la consulta a la API, el procesa
 y la presentación del cambio realizado.
 
 ## Funcionalidades
-- Convertir entre las siguientes monedas:
+**Convertir entre las siguientes monedas:**
 - Dólar (USD) y Peso Argentino (ARS)
 - Dólar (USD) y Real Brasileño (BRL)
 - Dólar (USD) y Peso Colombiano (COP)
-- Mostrar el resultado de la conversión en pantalla.
-- Guardar los resultados de las conversiones en un archivo JSON.
-- Finalizar el programa automáticamente después de guardar los resultados.
+**Mostrar el resultado de la conversión en pantalla.**
+**Guardar los resultados de las conversiones en un archivo JSON.**
+**Finalizar el programa automáticamente después de guardar los resultados.**
 
 ## Tabla de Contenidos
 - [Requisitos](#requisitos)
-- [Instalación](#instalación)
-- [Uso](#uso)
+- [Instalación y uso](#instalación-y-uso)
 - [Estructura del Proyecto](#estructura-del-proyecto)
   - [Main.java](#mainjava)
   - [ConsultaApi.java](#consultaapijava)
@@ -32,20 +31,15 @@ y la presentación del cambio realizado.
 - Dependencias externas para consultas HTTP (por ejemplo, `HttpClient` de Java o alguna librería como `OkHttp`).
 - Clave API válida para realizar consultas de conversión de moneda (obtenida de una API de cambio de divisas).
 
-## Instalación
+## Instalación y uso
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-repositorio/conversor-monedas.git
+   git clone https://github.com/ChayChaio/challenge-conversor-monedas.git
 
-Navega hasta el directorio del proyecto:
-  cd conversor-monedas
+Abrir la carpeta en IntelliJ
 
-Compila el proyecto:
-  javac -d bin src/*.java
-
-Ejecuta la aplicación:
-  java -cp bin com.aluracursos.challengeconversormonedas.Main
+Correr la clase Main.java
 
 Ingresa tu clave API cuando se te solicite.
 
@@ -55,17 +49,6 @@ Los resultados se mostrarán en pantalla y se almacenarán en una lista.
 Puedes optar por guardar los resultados de las conversiones en un archivo 
 JSON seleccionando la opción 7 en el menú. El programa se cerrará automáticamente 
 después de guardar los resultados correctamente.
-
-## Uso
-La aplicación toma como entrada una moneda base y una moneda destino para consultar la tasa de conversión y calcular el monto equivalente, 
-a su vez que le permite al usuario guardar sus consultas en un archivo .txt con fomato Json.
-
-*******************************************
-Resultado: Exitoso!
-Cambio de: USD =>> EUR
-Tasa de conversión: 0.85
-Resultado de la conversión: EUR 85.00
-*******************************************
 
 ## Estructura del Proyecto
 ### Main.java
