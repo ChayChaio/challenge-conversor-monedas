@@ -64,7 +64,7 @@ Responsable de gestionar la estructura de los datos JSON necesarios para interac
 
 ### ResultadoDelCambio.java
 Esta clase es un record que almacena los resultados de la conversión de moneda, como el monto convertido y la tasa de cambio. 
-También incluye un método mostrarAlmacenarResultado para imprimir los resultados y almacenarlos en una lista si es necesario.
+También incluye los métodos mostrarResultado y almacenarResultado para imprimir los resultados y almacenarlos en una lista si es necesario.
 
 ## Capturas paso a paso
 Mensaje de bienvenida y pedido de una APIKey para funcionar
