@@ -96,7 +96,6 @@ El archivo conversiones.txt fue creado correctamente con la información sobre l
 
 
 
-Este `README.md` cubre la funcionalidad básica del proyecto. Si hay algún aspecto que te gustaría ampliar o modificar, no dudes en decírmelo.
 
 
 
